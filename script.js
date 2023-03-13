@@ -28,6 +28,28 @@ var generatePassword = function () {
     var getUpperCase = confirm("Include uppercase?");
     var getNumeric = confirm("Include numbers?");
     var getSpecial = confirm("Include special characters?");
+
+
+    // Created for loop statement
+    for (var i = 0; i < passLength; i++) {
+
+      if (getLowerCase === true && newPassword.length < passLength) {
+        var index = Math.floor(Math.random() * lowerCase.length)
+        newPassword = newPassword + lowerCase[index]
+      }
+      if (getUpperCase === true && newPassword.length < passLength) {
+        var index = Math.floor(Math.random() * upperCase.length)
+        newPassword = newPassword + upperCase[index]
+      }
+      if (getNumeric === true && newPassword.length < passLength) {
+        var index = Math.floor(Math.random() * numeric.length)
+        newPassword = newPassword + numeric[index]
+      }
+      if (getSpecial === true && newPassword.length < passLength) {
+        var index = Math.floor(Math.random() * special.length)
+        newPassword = newPassword + special[index]
+      }
+    }
   }
 }
 
