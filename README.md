@@ -20,6 +20,8 @@ N/A
 ## Usage
 Below are several screenshots of the functionality of the password generator.
 
+https://domconf.github.io/Password_Generator/
+
 ![Screenshot 2023-03-13 at 2 47 05 PM](https://user-images.githubusercontent.com/123976458/224800634-429bf1a7-1455-4ddd-b3d1-192369548064.png)
 
 ![Screenshot 2023-03-13 at 2 47 37 PM](https://user-images.githubusercontent.com/123976458/224800678-4b72a5bc-2055-4824-97fd-87ce2dfbfc89.png)
