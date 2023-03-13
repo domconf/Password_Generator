@@ -4,7 +4,7 @@
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
+var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 
 var generatePassword = function () {
   var newPassword = ""
@@ -13,8 +13,15 @@ var generatePassword = function () {
 
   if (!passLength) {
     alert("Input value.");
+
   } else if (passLength < 8 || passLength > 128) {
-    alert("Character length does not meet criteria.")
+    alert("Character length does not meet criteria.");
+
+  } else if (passLength >= 8 || passLength <= 128) {
+    var getLowerCase = confirm("Include lowercase?");
+    var getUpperCase = confirm("Include uppercase?");
+    var getNumeric = confirm("Include numbers?");
+    var getSpecial = confirm("Include special characters?");
   }
 }
 
